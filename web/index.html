@@ -223,11 +223,66 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="app-w3" style="margin-top: -20px;">
 				<h4>Search</h4>
 				<div class="app-sub-w3">
+
+
+
+
 					<form action="searchresult.html" method="post">
-						<input type="text" name="Location" placeholder="Location" required=""/>
-						<input type="text" name="Types" placeholder="Types" required=""/>
-						<input type="text" name="Fields" placeholder="Fields" required=""/>
-						<input type="submit" value="Search">
+						
+
+<form action="/action_page.php">
+   <p style="color:white;font-size:25px;">Location
+  <select name="Hospitals" id="Hospitals"style= "width:200px;">
+    <option value="Helioplis">Helioplis</option>
+    <option value="Qatameya">Qatameya</option>
+    <option value="Masr-algdeda">Masr-algdeda</option>
+    <option value="Dokki">Dokki</option>
+
+  
+						
+						
+
+
+   <input type="submit" value="Search">
+					
+</select>
+
+</form>
+ </p>
+<form>
+<h1 style="color:white;">Age</h1>
+<input type="number" min="1" max="100">
+</form>
+<form action="/action_page.php" method="get">
+ <p style="color:white;font-size:25px;">&#160;Symptoms&nbsp;<br>
+  <input type="checkbox" name="symptom1" value="Fever">
+  <label for="symptom1">Fever</label><br>
+  <input type="checkbox" name="Symptom2" value="Dry cough">
+  <label for="symptom2">Dry cough</label><br>
+  <input type="checkbox" name="Symptom3" value="Tiredness">
+  <label for="symptom3">Tiredness</label><br>
+ <input type="checkbox" name="Symptom4" value="Sore throat">
+  <label for="symptom4">Sore throat</label><br>		
+ <input type="checkbox" name="Symptom5" value="Aches and pains">
+  <label for="symptom5"></label>Aches and pains<br>
+<input type="checkbox" name="Symptom6" value="Headache">
+  <label for="symptom6">Headache</label><br><br>
+</form>
+<form action="/action_page.php" method="get">
+ <p style="color:white;font-size:25px;">&#160;Chronic Diseases&nbsp;<br>
+  <input type="checkbox" name="chronic1" value="Cancer">
+  <label for="chronic1">Cancer</label><br>
+  <input type="checkbox" name="chronic2" value="Diabetes">
+  <label for="chronic2">Diabetes</label><br>
+  <input type="checkbox" name="chronic3" value="Heart Disease">
+  <label for="chronic3">Heart disease</label><br>
+ <input type="checkbox" name="chronic4" value="Chronic lung disease">
+  <label for="chronic4">Chronic lung disease</label><br>		
+ <input type="checkbox" name="chronic5" value="Kidney Disease">
+  <label for="chronic5"></label>Kidney Disease<br>
+<input type="checkbox" name="chronic6" value="Stroke">
+  <label for="chronic6">Stroke</label><br><br>
+</form>
 
 				</div>
 			</div>	
