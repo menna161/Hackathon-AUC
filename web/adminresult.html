@@ -172,9 +172,26 @@ h1 {
 		 
 		 </form>
 		 
-		 <form action="done.html" method="post"> 
-		 <input type="submit" value="submit">
-		 </form>
+		 
+<form action="/action_page.php">
+   <p style="color:black;font-size:20px;">Location
+  <select name="Hospitals" id="Hospitals"style= "width:200px;">
+    <option value="Helioplis.html">Helioplis</option>
+    <option value="Qatameya.html">Qatameya</option>
+    <option value="Masr-algdeda">Masr-algdeda</option>
+    <option value="Dokki">Dokki</option>
+<input type=button value="Submit" onclick="goToNewPage()" />
+  
+						
+						
+
+
+
+					
+</select>
+
+</form>
+ </p>
 		 
 		 
 		 
@@ -315,5 +332,14 @@ h1 {
 		<!-- //for-Testimonials -->
 
 <!-- //js-scripts -->
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('Hospitals').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
 </body>
 </html>
